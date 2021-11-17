@@ -1,0 +1,11 @@
+#calanderContainer {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.dayCard {
+  width: 12em;
+  min-height: 10em;
+  border: solid 2px black;
+  margin: .25em;
+}

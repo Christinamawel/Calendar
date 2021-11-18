@@ -30,18 +30,23 @@ _{This is a calendar app. You can choose different months and years at the top o
 * _After cloning the project, navigate into it using the command "cd Calendar"_
 * _Use the command "git remote -v" to confirm the creation of the new local repository_
 * _Open the project with the code editor of your choice_
+* _Go to https://calendarific.com/_
+* _Register a new account and get your api key_
+* _In the top level of your file tree put in a .env file_
+* _In the .env file put in your Api key and save it as the variable API_KEY_
 * _Run "npm install" in the terminal to set up all the local packages needed to run the program_
 * _To run in the local browser, run first "npm run build" then "npm run start" in the terminal to start the application_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
-
+_Note: when using the commands listed above, do not include the quotation marks. They are used here for readability._
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs_
+
+## Contact Information
+_Christy Welch, christinamawel@gmail.com_
+_Mike Watkins, michaelhugheswatkins@gmail.com_
 
 ## License
+_MIT License: https://opensource.org/licenses/MIT_
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
-
-Copyright (c) _date_ _author name(s)_
+Copyright (c) _2021_ _Christy Welch_ _Mike Watkins_

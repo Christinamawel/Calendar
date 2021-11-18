@@ -5,9 +5,10 @@ import $ from 'jquery';
 import {Holidays} from './holidays.js';
 import {monthDays} from './holidays.js';
 import {findHoliday} from './holidays.js';
+import {findFirstOfMonth} from './holidays.js';
 
 $(document).ready(function() {
-
+  const presentDay = new Date(Date.now());
   let now = new Date(Date.now());
   const months = ['January', 'February', 'March', 'April', 'May', "June", "July", "August", "September", "October", "November", "December"]
   $("#calendar").submit(function(event){
@@ -28,9 +29,14 @@ $(document).ready(function() {
         }
       })
       $("#calanderContainer").html("");
+      for(let i = 1; i <= findFirstOfMonth(now); i ++){
+        $('#calanderContainer').append(`
+        <div class="dayCard">
+        </div>`)
+      }
       for(let i=1; i <= monthDays(now); i++) {
         $("#calanderContainer").append(`
-        <div class="dayCard">
+        <div id='card${i}' class="dayCard">
         <h2>${i}</h2>
         <div id="day${i}"></div>
         </div>`)
@@ -47,8 +53,11 @@ $(document).ready(function() {
           $("#holidayName").text(`${id}`)
           $("#holidayDescription").text(`${holidaysInMonth[findHoliday(holidaysInMonth, id)].description}`)
         })
+
       }
-      
+      if(presentDay.getMonth() === now.getMonth() && presentDay.getFullYear() === now.getFullYear()){
+        $(`#card${presentDay.getDate()}`).css("background-color", "rgb(206,128,39");
+      }
       $("#monthName").text(months[now.getMonth()]);
     })
   }

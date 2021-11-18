@@ -34,3 +34,9 @@ export function findHoliday(holidayArray, name) {
   })
   return nameIndex
 }
+
+export function findFirstOfMonth(date) {
+  let firstDate = new Date(`${date.getMonth() + 1}/1/${date.getFullYear()}`)
+  return firstDate.getUTCDay();
+}
+

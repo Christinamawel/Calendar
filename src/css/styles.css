@@ -10,7 +10,7 @@ body {
 
 .dayCard {
   width: 12em;
-  min-height: 10em;
+  min-height: 13em;
   border: double 7px rgb(155, 59, 59);
   margin: .25em;
   background-color:rgb(5, 31, 41);

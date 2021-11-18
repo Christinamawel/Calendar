@@ -9,7 +9,16 @@
 <body>
   <div class="container">
     <h1 id="monthName"></h1>
+    <form id="calendar">
+      <label for="date">What month do you want to look at?</label>
+      <input type="date" id="month" name="month">
+      <button type="submit">Submit</button>
+    </form>
     <div id="calanderContainer">
+    </div>
+    <div class="card" id="description">
+      <h3 id="holidayName"></h3>
+      <p id="holidayDescription"></p>
     </div>
   </div>
 </body>

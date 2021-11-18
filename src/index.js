@@ -33,12 +33,12 @@ $(document).ready(function() {
       $("#calanderContainer").append(`
       <div class="dayCard">
       <h2>${i}</h2>
-      <p id="day${i}"></p>
+      <div id="day${i}"></div>
       </div>`)
 
-      holidaysInMonth.forEach(function(holiday) {
+      holidaysInMonth.forEach(function(holiday, index) {
         if (holiday.date.datetime.day === i) {
-          $(`#day${i}`).append(holiday.name)
+          $(`#day${i}`).append(`<p>${holiday.name}</p>`)
         }
       })
     }

@@ -1,3 +1,8 @@
+body {
+  background-color: rgb(222, 238, 243);
+  color:rgb(114, 43, 43);
+}
+
 #calanderContainer {
   display: flex;
   flex-wrap:wrap;
@@ -6,6 +11,17 @@
 .dayCard {
   width: 12em;
   min-height: 10em;
-  border: solid 2px black;
+  border: double 7px rgb(155, 59, 59);
   margin: .25em;
+  background-color:rgb(5, 31, 41);
+  color: rgb(222, 238, 243);
+}
+
+h2 {
+  padding-left: .25em;
+}
+
+p {
+  font-size: .8rem;
+  padding-left: .5em;
 }

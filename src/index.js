@@ -52,6 +52,7 @@ $(document).ready(function() {
           let id = $(this).attr('id');
           $("#holidayName").text(`${id}`)
           $("#holidayDescription").text(`${holidaysInMonth[findHoliday(holidaysInMonth, id)].description}`)
+          $("#description").show();
         })
 
       }

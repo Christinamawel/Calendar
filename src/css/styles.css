@@ -1,20 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body {
   background-color: rgb(222, 238, 243);
   color:rgb(114, 43, 43);
+  font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+
+#monthName {
+  font-weight: bold;
+  margin-top: .3em;
+  font-size:4rem;
+}
+
+label {
+  font-size: 1.2rem;
+  padding-right: .5em;
+}
+
+input {
+  border-radius: .5em;
+  margin-right: .5em;
+}
+
+#submit-btn {
+  background-color:rgb(5, 31, 41);
+  color:rgb(222, 238, 243);
+  border-radius: .5em;
+  padding: .5em 1em;
+  border: none;
+}
+
+#submit-btn:hover {
+  background-color:rgb(114, 43, 43);
+}
+
+#DaysOfWeek {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 1em;
 }
 
 #calanderContainer {
-  display: flex;
-  flex-wrap:wrap;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .dayCard {
-  width: 12em;
   min-height: 13em;
   border: double 7px rgb(155, 59, 59);
   margin: .25em;
   background-color:rgb(5, 31, 41);
   color: rgb(222, 238, 243);
+  border-radius: .5em;
+}
+
+.holiday:hover {
+  cursor: pointer;
+  font-weight: bold;
 }
 
 h2 {
@@ -24,4 +66,11 @@ h2 {
 p {
   font-size: .8rem;
   padding-left: .5em;
+}
+
+#description {
+  display: none;
+  padding: 1em;
+  border-radius: .5em;
+  margin-top: 0 1em;
 }
